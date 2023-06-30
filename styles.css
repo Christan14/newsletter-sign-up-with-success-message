@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --Tomato: hsl(4, 100%, 67%);
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*font-family: "Roboto" sans-serif;*/
+  background-color: var(--charcoal-grey);
+}
+
+.container {
+  display: flex;
+  background-color: var(--white);
+  margin: 15rem;
+  border-radius: 25px;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.container .bloc {
+  display: flex;
+  align-items: flex-start;
+  margin: 2rem;
+}
+
+.container .bloc .description ul{
+  margin-left: 58px;
+  font-family: 'Roboto';
+}
+
+.container .bloc .description ul li{
+  margin-bottom: 11px; 
+  font-size: 21px;
+  font-weight: 400;
+  list-style-type: none;
+  list-style-image: url(./assets/images/icon-list.svg);
+}*
+
+.container .bloc .description h1 {
+  font-size: 4.9em;
+  margin: 1rem;
+  font-family: 'roboto';
+}
+
+.container .bloc .description p {
+  font-size: 1.3em;
+  font-weight: 400;
+  margin: 1rem;
+  font-family: 'Roboto';
+}
+
+.container .bloc .description #formulaire{
+  margin-top: -10px;
+}
+
+.container .bloc .description #formulaire .form {
+  display: flex;
+  width: 39%;
+  flex-direction: column;
+}
+
+.container .bloc .description #formulaire .form label {
+  margin: 1rem;
+  font-weight: 700;
+  font-family: 'Roboto';
+}
+
+.container .bloc .description #formulaire button {
+  margin: 1rem;
+  margin-top: 1px;
+  width: 28rem;
+  padding: 1rem;
+  border-radius: 7px;
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  background-color: var(--dark-slate-grey);
+}
+
+button:hover {
+  background-color: var(--Tomato);
+  transition: all 2s;
+}
+
+.form input {
+  margin: 1rem;
+  margin-top: -2px;
+  width: 28rem;
+  padding: 1rem;
+  border-radius: 7px;
+  color: var(--grey);
+}
+
+img {
+  width: 100%;
+  /*margin-left: 4rem;*/
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  color: white;
+}
+
+@media  (max-width: 768px) {
+  body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+  }
+
+  /*.container{
+    display: flex;
+    background-color: var(--white);
+     margin: 15rem; 
+    border-radius: 25px;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+  }*/
+
+  .container .bloc{
+    display: flex;
+    align-items: flex-start;
+    margin: -15rem;
+    flex-direction: column-reverse;
+
+  }
+
+  .container .bloc .description h1 {
+    font-size: 3.3em;
+    margin: 2rem;
+    font-family: 'roboto';
+  }
+
+  .container .bloc .description p{
+    margin: 2rem;
+  }
+
+  .bloc .description .picture img{
+    width: 40%;
+  }
+
+  .container .bloc .description ul li{
+    margin: 1rem;
+  }
+
+  .container .bloc .description #formulaire .form{
+    margin: 1rem;
+  }
+
+  .container .bloc .description #formulaire button{
+    width: 24rem;
+    margin: 2rem;
+    margin-top: -1rem;
+  }
+
+  .form input{
+    width: 24rem;
+  }
+
+  .container .bloc .picture img{
+    width: 128%;
+    content: url("./assets/images/illustration-sign-up-mobile.svg");
+  }
+
+  .attribution{
+    display: none;
+  }
+  
+} 
