@@ -28,6 +28,62 @@ body {
   margin-bottom: 4rem;
 }
 
+.inside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside .card {
+  display: flex;
+  background-color: var(--white);
+  border-radius: 25px;
+  justify-content: center;
+  margin-top: 20rem;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  height: 28rem;
+}
+
+.inside .card span img {
+  width: 13%;
+  margin-bottom: -2rem;
+  margin-right: 16rem;
+}
+
+.inside .card .descrip {
+  margin: 3rem;
+}
+
+.inside .card .descrip h1 {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 3.2em;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Roboto';
+}
+
+.inside .card button {
+  width: 77%;
+  height: 50px;
+  color: var(--white);
+  background-color: var(--dark-slate-grey);
+  border-radius: 10px;
+  border: none;
+}
+
+.inside .card button:hover {
+  transition: all 1s;
+  background-color: var(--Tomato);
+}
+
 .container .bloc {
   display: flex;
   align-items: flex-start;
@@ -44,11 +100,11 @@ body {
   font-size: 21px;
   font-weight: 400;
   list-style-type: none;
-  list-style-image: url(./assets/images/icon-list.svg);
-}*
+  list-style-image: url(../assets/images/icon-list.svg);
+}
 
 .container .bloc .description h1 {
-  font-size: 4.9em;
+  font-size: 4.6em;
   margin: 1rem;
   font-family: 'roboto';
 }
@@ -88,9 +144,12 @@ body {
   background-color: var(--dark-slate-grey);
 }
 
-button:hover {
-  background-color: var(--Tomato);
-  transition: all 2s;
+
+
+.container .bloc .description #formulaire button:hover {
+  
+  background-color: hsl(4, 100%, 67%);
+  transition: all 1s;
 }
 
 .form input {
@@ -100,6 +159,10 @@ button:hover {
   padding: 1rem;
   border-radius: 7px;
   color: var(--grey);
+}
+
+.hide{
+  display: none;
 }
 
 img {
@@ -113,6 +176,8 @@ img {
   gap: 1rem;
   color: white;
 }
+
+
 
 @media  (max-width: 768px) {
   body{
@@ -137,6 +202,10 @@ img {
     flex-direction: column-reverse;
 
   }
+  .inside .card {
+    width: 98%;
+    margin-top: 6rem;
+  }
 
   .container .bloc .description h1 {
     font-size: 3.3em;
@@ -144,12 +213,31 @@ img {
     font-family: 'roboto';
   }
 
+  .inside .card .descrip {
+    margin: 1rem;
+  }
+
+  .inside .card .descrip h1 {
+    font-size: 2.2em;
+  }
+
   .container .bloc .description p{
     margin: 2rem;
   }
 
+  p {
+    font-size: 16px;
+  }
+
   .bloc .description .picture img{
     width: 40%;
+  }
+
+  
+  .inside .card span img {
+    width: 14%;
+    margin-right: 17rem;
+    margin-bottom: 2px;
   }
 
   .container .bloc .description ul li{
@@ -166,13 +254,23 @@ img {
     margin-top: -1rem;
   }
 
+  .container .bloc .description #formulaire button:hover {
+    background-color: var(--Tomato);
+  }
+
+  .inside .card button {
+    width: 90%;
+    margin-top: 18rem;
+    padding: 15px;
+  }
+
   .form input{
     width: 24rem;
   }
 
   .container .bloc .picture img{
     width: 128%;
-    content: url("./assets/images/illustration-sign-up-mobile.svg");
+    content: url("../assets/images/illustration-sign-up-mobile.svg");
   }
 
   .attribution{
