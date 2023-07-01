@@ -47,6 +47,10 @@ body {
   height: 28rem;
 }
 
+.inside .attribution {
+  display: none;
+}
+
 .inside .card span img {
   width: 13%;
   margin-bottom: -2rem;
